@@ -21,7 +21,6 @@ function calcular() {
     const tottot = totdif + penimp;
 
     const resultados = `
-        <p>La reserva es: <strong>${y}</strong></p>
         <p>DIFERENCIA = ${pag.toFixed(2)}, PORCENTUAL DEL ${(por * 100).toFixed(2)}% = ${porc.toFixed(2)}</p>
         <p>TOTAL DIFERENCIA = ${totdif.toFixed(2)}</p>
         <p>PENALIDAD = ${penimp.toFixed(2)}</p>
