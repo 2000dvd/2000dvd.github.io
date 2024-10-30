@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cambiosss</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="content">
+        <h1>Calculadora de Cambios</h1>
+        <form id="formulario">
+            <label for="tipo">Tipo de reserva (P o N):</label>
+            <input type="text" id="tipo" maxlength="1" required><br><br>
+
+            <label for="ant">¿Cuánto tiene a favor? (ant):</label>
+            <input type="number" id="ant" step="0.01" required><br><br>
+
+            <label for="nuv">¿Cuánto cuesta ahora? (new):</label>
+            <input type="number" id="nuv" step="0.01" required><br><br>
+
+            <label for="pen">¿Cuánto es la penalidad? (pen):</label>
+            <input type="number" id="pen" step="0.01" required><br><br>
+
+            <label for="pais">¿De qué país?</label>
+            <input type="text" id="pais" required><br><br>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button type="reset">Reiniciar</button>
+        </form>
+
+        <div id="resultados"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
