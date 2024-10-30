@@ -1,18 +1,9 @@
 function calcular() {
-    const tipo = document.getElementById("tipo").value.toLowerCase();
     const ant = parseFloat(document.getElementById("ant").value);
     const nuv = parseFloat(document.getElementById("nuv").value);
     const pen = parseFloat(document.getElementById("pen").value);
     const pais = document.getElementById("pais").value.toLowerCase();
 
-    let y;
-    if (tipo === 'p') {
-        y = "PARCIALMENTE USADA";
-    } else if (tipo === 'n') {
-        y = "NUEVA";
-    } else {
-        y = "INVÁLIDA";
-    }
 
     const tarifas = {
         bolivia: 0.1497, colombia: 0.095, "costa rica": 0.05,
